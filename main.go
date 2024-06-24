@@ -1,10 +1,12 @@
 package main
 
-import "zhouhzLearn/list"
+import (
+	"fmt"
+	"zhouhzLearn/hash"
+)
 
 func main() {
-	nums := []int{1, 2, 3, 4, 5, 6, 7, 8, 9}
-	linkList := list.ConvertArrayToLinkedList(nums)
-	res := list.RemoveNthFromEnd(linkList, 3)
-	list.PrintLinkedList(res)
+	nums1 := []int{1, 0, -1, 0, -2, 2}
+	res := hash.FourSum(nums1, 0)
+	fmt.Println(res)
 }
