@@ -2,11 +2,12 @@ package main
 
 import (
 	"fmt"
-	"zhouhzLearn/hash"
+	"zhouhzLearn/string"
 )
 
 func main() {
-	nums1 := []int{1, 0, -1, 0, -2, 2}
-	res := hash.FourSum(nums1, 0)
+	nums1 := "aabaac"
+	//nums2 := "ll"
+	res := string.GetRepeatStr(nums1)
 	fmt.Println(res)
 }
